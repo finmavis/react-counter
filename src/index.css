@@ -15,16 +15,16 @@ body {
   height: calc(100% - 56px);
 }
 
-.clicker {
+.counter {
   width: 300px;
   height: 300px;
 }
 
-.clicker-display {
+.counter-display {
   height: 200px;
 }
 
-.clicker-panels {
+.counter-panels {
   height: 100px;
 }
 
