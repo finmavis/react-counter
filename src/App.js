@@ -24,7 +24,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header title={this.state.title} />
+        <Header 
+          icon="fas fa-hand-point-up"
+          title={this.state.title} />
         <Counter 
           counter={this.state.counter} 
           increment={this.incrementHandler} 
