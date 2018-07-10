@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 
+import Aux from './hoc/AuxWrap';
+
 import Header from './components/Header';
 import Counter from './components/Counter';
+import Footer from './components/Footer';
 
 class App extends Component {
   state = {
@@ -23,7 +26,7 @@ class App extends Component {
   
   render() {
     return (
-      <div className="App">
+      <Aux>
         <Header 
           icon="fas fa-hand-point-up"
           title={this.state.title} />
@@ -32,7 +35,8 @@ class App extends Component {
           increment={this.incrementHandler} 
           decrement={this.decrementHandler} 
           reset={this.resetCounterHandler} />
-      </div>
+        <Footer />
+      </Aux>
     );
   }
 }
